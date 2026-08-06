@@ -1,112 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khushdeep Kakria - Profile Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushdeep Kakria</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:linear-gradient(to right,#74ebd5,#9face6);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.card{
-    background:white;
-    width:350px;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.profile-img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    background:#ddd;
-    margin:0 auto 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:40px;
-    color:#555;
-}
-
-h1{
-    color:#333;
-    margin-bottom:10px;
-}
-
-h3{
-    color:#666;
-    margin-bottom:20px;
-    font-weight:normal;
-}
-
-p{
-    color:#555;
-    line-height:1.6;
-    margin-bottom:20px;
-}
-
-button{
-    background:#4CAF50;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    border-radius:25px;
-    cursor:pointer;
-    font-size:16px;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#2e8b57;
-    transform:scale(1.05);
-}
-</style>
-
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="card">
 
-    <div class="profile-img">
+    <div class="profile">
         KK
     </div>
 
-    <h1>Khushdeep Kakria</h1>
+    <h1 id="name">Khushdeep Kakria</h1>
 
     <h3>Web Development Learner</h3>
 
-    <p>
-        Hello! My name is <b>Khushdeep Kakria</b>.
-        I am learning HTML and CSS to become a web developer.
-        This is my first practice project.
+    <p id="message">
+        Welcome to my first HTML, CSS & JavaScript project.
     </p>
 
-    <button onclick="showMessage()">
-        Say Hello
+    <button onclick="changeMessage()">
+        Change Message
     </button>
 
 </div>
 
-<script>
-function showMessage(){
-    alert("Welcome! Keep Practicing HTML, CSS and JavaScript.");
-}
-</script>
+<!-- External JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
